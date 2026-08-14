@@ -3,91 +3,170 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="https://cdn.tailwindcss.com"></script>
-      <title>Hollow Knight</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Hollow Knight</title>
   </head>
-  <body>
-    <header class="bg-[#0D0E14] text-[#E6E6E6] border-b border-[#2C2D3A]">
-  <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-4">
-    <a href="#" class="flex items-center gap-2">
-      <img src="./img/icono.png" alt="logo" width="36" height="36" />
-      <span class="font-bold tracking-wide leading-tight">HOLLOW<br class="hidden sm:block">KNIGHT</span>
+
+  <body class="bg-gray-800 text-white p-1">
+    <!-- Esta sección contiene el nav. -->
+    <!-- El nav fue cambiado agregando el menu hamburguesa -->
+   <header class="px-4 bg-[#0D0E14] text-white">
+    <div class="relative flex w-full flex-col py-4 sm:flex-row sm:items-center sm:justify-between">    <a class="flex items-center text-2xl font-black">
+      <span class="mr-2 text-3xl">
+        <img src="./img/icono.png" alt="logo" class="h-12 w-12" />
+      </span>
+      <span class="text-2xl font-semibold ml-2 leading-tight">HOLLOW<br class="hidden sm:block" /> KNIGHT</span>
     </a>
-    <ul id="navLinks" class="hidden md:flex items-center gap-8 text-sm tracking-wide">
-      <li><a href="index.html" class="hover:text-[#A6A6C8]">INICIO</a></li>
-      <li><a href="personajes.html" class="hover:text-[#A6A6C8]">PERSONAJES</a></li>
-      <li><a href="historia.html" class="hover:text-[#A6A6C8]">HISTORIA</a></li>
-    </ul>
-    </div>
+      <input class="peer hidden" type="checkbox" id="navbar-open" />
+      <label class="absolute right-0 mt-1 cursor-pointer text-xl sm:hidden" for="navbar-open">
+        <span class="sr-only">Toggle Navigation</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="0.88em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zm0 160c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zm448 160c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h384c17.7 0 32 14.3 32 32z" /></svg>
+      </label>
+    <nav aria-label="Header Navigation" class="peer-checked:block hidden pl-2 py-6 sm:block sm:py-0">
+      <ul class="flex flex-col gap-y-4 sm:flex-row sm:gap-x-8">
+        <li><a class="hover:text-[#A6A6C8]" href="./index.html">INICIO</a></li>
+        <li><a class="hover:text-[#A6A6C8]" href="./personajes.html">PERSONAJES</a></li>
+        <li><a class="hover:text-[#A6A6C8]" href="./historia.html">HISTORIA</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
-
     <main>
-      <img src="./img/hero.png" alt="Imagen del personaje principal en acción." />
-
-      <section>
-        <h1>Personajes Destacados</h1>
-        <p>Conoce algunos de los personajes de Hollownest.</p>
+      <!-- Esta sección contiene el hero. -->
+      <section
+        class="flex min-h-[450px] items-center justify-center bg-[url('./img/hero.png')] bg-cover bg-center text-center text-white"
+      >
+        <h1 class="text-4xl font-bold">HOLLOW KNIGHT</h1>
       </section>
 
-      <section>
-        <div>
-          <div>
-            <img src="./img/hornet.png" alt="Hornet" />
-            <div>
-              <h5>Hornet</h5>
-              <p>Princesa protectora de Hallownest, ágil y letal en combate</p>
-              <a href="#">VER MÁS</a>
-            </div>
-          </div>
+      <!-- Esta sección contiene el hero. -->
+      <section class="container mx-auto py-5 px-4">
+        <div class="text-center mb-4">
+          <h2 class="text-2xl font-bold text-white">Personajes Destacados</h2>
+
+          <p class="text-gray-300">
+            Conoce algunos de los personajes de Hollownest.
+          </p>
         </div>
 
-        <div>
-          <div>
-            <img src="./img/quirrel.png" alt="Quirrel" />
-            <div>
-              <h5>QUIRREL</h5>
-              <p>Un errante curioso en busca de conocimiento</p>
-              <a href="#">VER MÁS</a>
+        <div class="grid grid-cols-1 md:grid-cols-3 justify-items-center gap-4">
+          <!-- HORNET -->
+          <div class="w-full">
+            <div
+              class="flex h-full flex-col overflow-hidden rounded-lg border border-gray-600 bg-gray-900 bg-[url('./img/fondo.png')] bg-cover text-white"
+            >
+              <div class="aspect-[4/3]">
+                <img
+                  src="./img/hornet.png"
+                  class="h-full w-full object-cover"
+                  alt="Hornet"
+                />
+              </div>
+
+              <div class="flex h-full flex-col p-4 text-center">
+                <h5 class="mb-2 text-xl font-semibold">Hornet</h5>
+
+                <p class="mb-4 text-gray-300">
+                  Princesa protectora de Hallownest, ágil y letal en combate
+                </p>
+
+                <a
+                  href="./personajes.html"
+                  class="mt-auto inline-block rounded bg-gray-600 px-4 py-2 text-white transition hover:bg-gray-500"
+                >
+                  VER MÁS
+                </a>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div>
-          <div>
-            <img src="./img/grimm.png" alt="Grimm" />
-            <div>
-              <h5>Grimm</h5>
-              <p>Maestro de ceremonias del Troupe Grimm</p>
-              <a href="#">VER MÁS</a>
+          <!-- QUIRREL -->
+          <div class="w-full">
+            <div
+              class="flex h-full flex-col overflow-hidden rounded-lg border border-gray-600 bg-gray-900 bg-[url('./img/fondo.png')] bg-cover text-white"
+            >
+              <div class="aspect-[4/3]">
+                <img
+                  src="./img/quirrel.png"
+                  class="h-full w-full object-cover"
+                  alt="Quirrel"
+                />
+              </div>
+
+              <div class="flex h-full flex-col p-4 text-center">
+                <h5 class="mb-2 text-xl font-semibold">QUIRREL</h5>
+
+                <p class="mb-4 text-gray-300">
+                  Un errante curioso en busca de conocimiento
+                </p>
+
+                <a
+                  href="./personajes.html"
+                  class="mt-auto inline-block rounded bg-gray-600 px-4 py-2 text-white transition hover:bg-gray-500"
+                >
+                  VER MÁS
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- GRIMM -->
+          <div class="w-full">
+            <div
+              class="flex h-full flex-col overflow-hidden rounded-lg border border-gray-600 bg-gray-900 bg-[url('./img/fondo.png')] bg-cover text-white"
+            >
+              <div class="aspect-[4/3]">
+                <img
+                  src="./img/grimm.png"
+                  class="h-full w-full object-cover"
+                  alt="Grimm"
+                />
+              </div>
+
+              <div class="flex h-full flex-col p-4 text-center">
+                <h5 class="mb-2 text-xl font-semibold">Grimm</h5>
+
+                <p class="mb-4 text-gray-300">
+                  Maestro de ceremonias del Troupe Grimm
+                </p>
+
+                <a
+                  href="./personajes.html"
+                  class="mt-auto inline-block rounded bg-gray-600 px-4 py-2 text-white transition hover:bg-gray-500"
+                >
+                  VER MÁS
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
+      <!-- Esta sección contiene una intro. -->
       <section>
         <img src="./img/img_final.png" alt="Escena del juego Hollow Knight." />
         <h2>¿Listo para la aventura?</h2>
       </section>
     </main>
 
-    <footer class="bg-[#0D0E14] text-[#E6E6E6] border-t border-[#2C2D3A] px-4 py-6">
-  <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+    <footer
+      class="bg-[#0D0E14] text-[#E6E6E6] border-t border-[#2C2D3A] px-4 py-6"
+    >
+      <div
+        class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4"
+      >
+        <div class="flex items-center gap-2 order-2 md:order-1">
+          <img src="./img/icono.png" alt="logo" width="24" height="24" />
+          <p class="text-sm text-center md:text-left">© 2026 Hollow Knight</p>
+        </div>
 
-    <div class="flex items-center gap-2 order-2 md:order-1">
-      <img src="./img/icono.png" alt="logo" width="24" height="24" />
-      <p class="text-sm text-center md:text-left">
-        © 2026 Hollow Knight
-      </p>
-    </div>
-
-    <div class="flex items-center gap-4 text-sm order-1 md:order-2">
-      <a href="#" class="hover:text-[#A6A6C8]">Discord</a>
-      <a href="#" class="hover:text-[#A6A6C8]">X</a>
-      <a href="#" class="hover:text-[#A6A6C8]">GitHub</a>
-    </div>
-
-  </div>
-</footer>
+        <div class="flex items-center gap-4 text-sm order-1 md:order-2">
+          <a href="#" class="hover:text-[#A6A6C8]">Discord</a>
+          <a href="#" class="hover:text-[#A6A6C8]">X</a>
+          <a href="#" class="hover:text-[#A6A6C8]">GitHub</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
