@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>Hollow Knight</title>
+    </head>
+
+    <body class="bg-[#212529] text-white">
+    <header class="px-4 bg-[#0D0E14] text-white">
+    <div class="relative flex w-full flex-col py-4 sm:flex-row sm:items-center sm:justify-between">    
+        <a class="flex items-center text-2xl font-black">
+        <span class="mr-2 text-3xl">
+            <img src="./img/icono.png" alt="logo" class="h-12 w-12" />
+        </span>
+        <span class="text-2xl font-semibold ml-2 leading-tight">HOLLOW<br class="hidden sm:block" /> KNIGHT</span>
+        </a>
+        <input class="peer hidden" type="checkbox" id="navbar-open" />
+        <label class="absolute right-0 mt-1 cursor-pointer text-xl sm:hidden" for="navbar-open">
+        <span class="sr-only">Toggle Navigation</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="0.88em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zm0 160c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zm448 160c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h384c17.7 0 32 14.3 32 32z" /></svg>
+        </label>
+        <nav aria-label="Header Navigation" class="peer-checked:block hidden pl-2 py-6 sm:block sm:py-0">
+            <ul class="flex flex-col gap-y-4 sm:flex-row sm:gap-x-8">
+                <li><a class="hover:text-[#A6A6C8]" href="./index.html">INICIO</a></li>
+                <li><a class="hover:text-[#A6A6C8]" href="./personajes.html">PERSONAJES</a></li>
+                <li><a class="hover:text-[#A6A6C8]" href="./historia.html">HISTORIA</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+
+    <section
+        class="flex min-h-[300px] items-center justify-center bg-[url('./img/banner_acerca_de.png')] bg-cover bg-center text-center text-white">
+            <h1 class="text-7xl">HISTORIA</h1>
+    </section>
+
+        <section class="container mx-auto py-5 px-4">
+        <div class="text-center mb-4">
+            <h1 class="pt-8 text-3xl font-bold">LA HISTORIA DE HOLLOW KNIGHT</h1>
+
+            <p class="p-2 text-gray-500">
+            Conoce algunos de los personajes de Hollownest.
+            </p>
+        </div>
+    
+    <div class="relative flex md:flex-row w-full">
+    <div class="relative p-11 md:w-2/5 shrink-0 overflow-hidden">
+        <img
+        src="./img/historia.png"
+        alt="imagen resumen de la historia del juego Hollow Knight"
+        class="h-full w-full rounded-md md:rounded-lg object-cover"
+    />
+    </div>
+    <div class="pt-10">
+  <h1 class="pt-8 pb-3 text-3xl font-bold">El reino de Hallownest</h1>
+    <p> Hollow Knight nos lleva a las profundidades de Hallownest, un antiguo reino habitado por insectos. Bajo las ruinas de este lugar se esconden secretos, criaturas y restos de una civilización que alguna vez fue próspera.</p>
+
+    <p class="pt-4">El protagonista, conocido como el Caballero, llega a Hallownest y comienza a explorar sus diferentes regiones. A medida que avanza, descubre que el reino está afectado por una misteriosa infección que ha corrompido a muchos de sus habitantes.</p>
+
+      <h1 class="pt-8 pb-3 text-3xl font-bold">La infección</h1>
+
+    <p>La infección está relacionada con una antigua entidad conocida como el Destello. Para contener esta amenaza, el antiguo Rey Pálido creó a los Vasijas, seres destinados a contener la infección dentro de sí mismos.</p>
+    <p class="pt-4" >Sin embargo, el sacrificio utilizado para contenerla no fue suficiente. Con el paso del tiempo, la infección volvió a extenderse por Hallownest, llevando al reino nuevamente hacia la decadencia.</p>
+    <div>
+
+    </div>
+    </div>
+    </div> 
+</section>
+
+
+    <footer
+      class="bg-[#0D0E14] text-[#E6E6E6] border-t border-[#2C2D3A] px-4 py-6"
+    >
+      <div
+        class="flex flex-col md:flex-row items-center justify-between gap-4"
+      >
+        <div class="flex items-center gap-2 order-2 md:order-1">
+          <img src="./img/icono.png" alt="logo" width="24" height="24" />
+          <p class="text-sm text-center md:text-left">© 2026 Hollow Knight</p>
+        </div>
+
+        <div class="flex items-center gap-4 text-sm order-1 md:order-2">
+          <a href="#" class="hover:text-[#A6A6C8]">Discord</a>
+          <a href="#" class="hover:text-[#A6A6C8]">X</a>
+          <a href="#" class="hover:text-[#A6A6C8]">GitHub</a>
+        </div>
+      </div>
+    </footer>
+
+</body>
+
+</html>
