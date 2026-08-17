@@ -4,7 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              cinzel: ["Cinzel", "serif"],
+              inter: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
 
     <link
       rel="stylesheet"
@@ -13,17 +31,17 @@
     <title>Hollow Knight</title>
   </head>
 
-  <body class="bg-zinc-900 text-white p-1">
+  <body class="bg-[#1A1B22] text-white p-1 font-inter">
     <!-- SECCION NAV -->
     <header class="border-b border-gray-700">
-      <nav class="bg-black border-b border-gray-700">
+      <nav class="bg-[#0D0E14] border-b border-gray-700">
         <div
           class="w-full px-4 py-2 flex flex-wrap items-center justify-between"
         >
           <a href="./index.html" class="flex items-center">
             <img src="./img/icono.png" alt="logo" class="w-[50px] h-[50px]" />
 
-            <span class="text-xl md:text-2xl font-semibold ml-2 leading-tight">
+            <span class="text-xl md:text-2xl font-semibold ml-2 leading-tight font-cinzel">
               HOLLOW <br />
               KNIGHT
             </span>
@@ -101,7 +119,7 @@
             </div>
 
             <div class="p-6">
-              <h3 class="text-2xl font-bold mb-4">Hornet</h3>
+              <h3 class="text-2xl font-bold mb-4 font-cinzel">Hornet</h3>
 
               <p class="text-gray-300 leading-relaxed mb-4">
                 Hornet es una guerrera ágil y habilidosa que protege Hallownest.
@@ -131,7 +149,7 @@
             </div>
 
             <div class="p-6">
-              <h3 class="text-2xl font-bold mb-4">Quirrel</h3>
+              <h3 class="text-2xl font-bold mb-4 font-cinzel">Quirrel</h3>
 
               <p class="text-gray-300 leading-relaxed mb-4">
                 Quirrel es un viajero curioso que recorre las distintas regiones
@@ -160,7 +178,7 @@
             </div>
 
             <div class="p-6">
-              <h3 class="text-2xl font-bold mb-4">Grimm</h3>
+              <h3 class="text-2xl font-bold mb-4 font-cinzel">Grimm</h3>
 
               <p class="text-gray-300 leading-relaxed mb-4">
                 Grimm es el líder de la Troupe Grimm, un grupo de misteriosos
@@ -179,7 +197,7 @@
 
     <!-- SECCION FOOTER -->
     <footer
-      class="flex flex-col md:flex-row justify-between items-center gap-4 p-5 bg-black"
+      class="flex flex-col md:flex-row justify-between items-center gap-4 p-5 bg-[#0D0E14]"
     >
       <div class="flex items-center gap-4 text-2xl">
         <a href="#" class="hover:text-gray-400 transition">
