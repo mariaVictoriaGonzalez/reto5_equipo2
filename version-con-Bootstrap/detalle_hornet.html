@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./css/estilos.css" />
+
+    <title>Hollow Knight</title>
+  </head>
+  <body class="text-bg-dark text-light p-1">
+    <header class="border-bottom">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-black border-bottom">
+        <div class="container-fluid">
+          <a class="navbar-brand d-flex align-items-center" href="./index.html">
+            <img src="./img/icono.png" alt="logo" width="50" height="50" />
+            <span class="h3 mb-0 ms-2"
+              >HOLLOW <br />
+              KNIGHT</span
+            >
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="/version-con-Bootstrap/index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  href="/version-con-Bootstrap/personajes.html"
+                  >Personajes</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  href="/version-con-Bootstrap/historia.html"
+                  >Historia</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Esta sección contiene al banner -->
+      <section
+        class="hero d-flex align-items-center justify-content-center text-center text-white"
+        style="
+          min-height: 300px;
+          background-image: url(./img/banner_personajes.png);
+          background-size: cover;
+          background-position: center;
+        "
+      >
+        <div>
+          <img src="./img/titulo_personajes.png" alt="Titulo personajes" class="img-fluid col-12 col-md-6 ">
+        </div>
+      </section>
+      <!-- Esta sección contiene los personajes -->
+      <section class="container col-lg-10 py-5">
+        <!-- HORNET -->
+        <div class="row mb-5">
+          <div class="col-12">
+            <div
+              class="card bg-dark border-secondary text-light shadow"
+            >
+              <div class="ratio ratio-21x9">
+                <img
+                  src="./img/hornet_personajes.png"
+                  class="card-img-top object-fit-cover"
+                  alt="Hornet"
+                />
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Hornet</h3>
+
+                <p class="card-text">
+                  Hornet es una guerrera ágil y habilidosa que protege
+                  Hallownest. Es hija del Rey Pálido y de Herrah la Bestia, y
+                  posee una importante conexión con la historia del reino.
+                </p>
+
+                <p class="card-text">
+                  Utiliza una aguja como arma y se caracteriza por su gran
+                  velocidad y capacidad de combate.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </main>
+
+    <!-- Esta sección contiene el footer. -->
+    <footer
+      class="d-flex justify-content-between align-items-center p-3 bg-black"
+    >
+      <div class="d-flex align-items-center gap-3">
+        <i class="bi bi-discord"></i>
+        <i class="bi bi-twitter-x"></i>
+        <i class="bi bi-github"></i>
+      </div>
+
+      <p class="mb-0">© 2026 Hollow Knight</p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
