@@ -23,7 +23,7 @@
         },
       };
     </script>
-    
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"
@@ -51,12 +51,15 @@
           </a>
 
           <!-- BOTON MOBILE -->
-          <button class="lg:hidden border border-gray-600 rounded px-3 py-2">
+          <button
+            id="menu-btn"
+            class="lg:hidden border border-gray-600 rounded px-3 py-2"
+          >
             ☰
           </button>
 
           <!-- NAV -->
-          <div class="w-full lg:w-auto mt-3 lg:mt-0">
+          <div id="menu" class="hidden lg:block w-full lg:w-auto mt-3 lg:mt-0">
             <ul
               class="flex flex-col lg:flex-row lg:items-center gap-2 lg:gap-6"
             >
@@ -91,6 +94,15 @@
         </div>
       </nav>
     </header>
+
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const menu = document.getElementById("menu");
+
+      menuBtn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
 
     <main>
       <!-- SECCION HERO -->
